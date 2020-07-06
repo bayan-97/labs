@@ -5,6 +5,7 @@ alert("welcome  "  + ans1 + "  lets to play  with each other ");
 
 var ans2 =prompt( "is my fav drink coffee?");
 console.log(ans2);
+alert(ans2);
 switch (ans2.toLocaleLowerCase()) {
     case'yes':
        alert("wow you can guess it");
@@ -12,12 +13,13 @@ switch (ans2.toLocaleLowerCase()) {
     case'no':
         alert("you cant guess it is coffee  ");
         break;
-
 }
 
 
 var ans3 =prompt( "is my fav color red?");
 console.log(ans3);
+alert(ans3);
+
 switch (ans3.toLocaleLowerCase()) {
     case 'yes':
        alert("no it is purple dont give up");
@@ -31,6 +33,8 @@ switch (ans3.toLocaleLowerCase()) {
 
 var ans4 =prompt( "is my fav animale dog?");
 console.log(ans4);
+alert(ans4);
+
 switch (ans4.toLocaleLowerCase()) {
     case 'yes':
        alert("no it is cat we still have fun");
@@ -57,6 +61,7 @@ switch (ans5.toLocaleLowerCase()) {
 
 var ans6=prompt( "is my fav sport  tennis?");
 console.log(ans6);
+alert(ans6);
 switch (ans5.toLocaleLowerCase()) {
     case 'yes':
        alert("yes really i am amazing from you");
