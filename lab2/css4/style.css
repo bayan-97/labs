@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: darkred;
     font-weight: lighter;
+    list-style-position: inside;
 }
 
 .sec{
@@ -12,4 +13,14 @@
 }
 body{
     background-color: darkgray;
+}
+ ol { list-style-position: inside;
+    font-family: "Times New Roman", Times, serif;
+    color:brown;
+    font-weight: bold;
+}
+h2{
+    font-family: "Times New Roman", Times, serif;
+    color: darkblue;
+    font-weight: bold;
 }
