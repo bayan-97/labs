@@ -19,20 +19,20 @@ function trueFalseAboutBayan() {
     {
       body: 'is my fav color red?',
       ri: 'no',
-      onYesMessage: 'no it is purple dont give up',
-      onNoMessage: 'great it is purple',
+      onYesMessage:'great it is purple',
+      onNoMessage: 'no it is purple dont give up',
     },
     {
       body: 'is my fav animale dog?',
       ri: 'no',
-      onYesMessage: 'No! its cat',
-      onNoMessage: 'I prefer cats',
+      onYesMessage: 'I prefer cats',
+      onNoMessage: 'No! its cat',
     },
     {
       body: 'is my fav food  pizza?',
       ri: 'no',
-      onYesMessage: 'Who like pizza!?',
-      onNoMessage: 'I perfer pasta',
+      onYesMessage: 'I perfer pasta',
+      onNoMessage: 'Who like pizza!?',
     },
     {
       body: 'is my fav sport  tennis?',
