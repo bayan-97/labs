@@ -2,10 +2,6 @@
     font-family: Arial, Helvetica, sans-serif;
     color:darkblue;
     font-weight: lighter;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  
     
 }
 
@@ -14,16 +10,16 @@
     font-family:Arial, Helvetica, sans-serif;
     color:rgb(45, 48, 151);
     font-weight: bold;
-    position: absolute;
-    top: 50%;
-    width: 100%;
+    position:-webkit-sticky;
     position: sticky;
-    top: 15px;
-   
+    top: 020px;
+    bottom: 20px;
+    border: 20px black;
+  
 }
 img{
     width: 100%;
-    height: auto;
+    height: 100%;
     
 
 }

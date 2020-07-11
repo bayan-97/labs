@@ -67,7 +67,7 @@ function catsMeter() {
     alert('it is right ');
     score = score + 1;
   } else {
-    for (var index = 0; index < 3 && answer !== 8; index++) {
+    for (var index = 0; index < 3 && answer != 8; index++) {
       if (answer >= 6) {
         alert('too high');
       } else if (answer < 6) {
