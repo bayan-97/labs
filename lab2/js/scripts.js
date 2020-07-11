@@ -1,7 +1,7 @@
 'use strict';
 var score = 0;
 var answers = [];
-var correctAnswers = [];
+var rights= [];
 
 function askForName() {
   var name = prompt('what is your name?');
@@ -46,6 +46,7 @@ function trueFalseAboutBayan() {
     var answer = prompt(questions[i].body, 'yes or no ');
     if (answer === questions[i].ri) {
       answers.push(answer);
+      rights.push(questions[i].ri);
       alert(questions[i].onYesMessage);
       score++;
     } else {
@@ -60,24 +61,22 @@ function trueFalseAboutBayan() {
 
 function catsMeter() {
   var answer = prompt(' how much i love cat from 10??');
-
-  if (answer === 8) {
-
+  answers.push(answer);
+  rights.push(8);
+  if (answer == 8) {
     alert('it is right ');
     score = score + 1;
   } else {
-    for (var index = 0; index < 4 && answer != 8; index++) {
+    for (var index = 0; index < 3 && answer !== 8; index++) {
       if (answer >= 6) {
         alert('too high');
       } else if (answer < 6) {
         alert('too low');
       }
-
-      var answer = prompt(' how much i love cat from 10??');
-      console.log(answer);
+      answer = prompt(' how much i love cat from 10??');
     }
-    if (answer === 8) {
-      console.log('it is right ');
+    if (answer == 8) {
+      alert('it is right ');
       score++;
     }
     alert(' the 8 its the right answer ');
@@ -86,8 +85,9 @@ function catsMeter() {
 function favAnimals() {
   var userAnswer = prompt('do you know my favourits animals?');
   userAnswer = userAnswer.toLowerCase();
-
   var correctAnswers = ['cat', 'tigger'];
+  answers.push(userAnswer);
+  rights.push( correctAnswers );
   if (userAnswer === correctAnswers[0] || userAnswer === correctAnswers[1]) {
 
     alert('it is right');
@@ -98,20 +98,21 @@ function favAnimals() {
       var i = 0;
       i < 5 &&
       userAnswer !== correctAnswers[0] &&
-      userAnswer !== correctAnswers[1];
-      i++
+      userAnswer !== correctAnswers[1]
+      ;i++
     ) {
-      // eslint-disable-next-line no-redeclare
-      var userAnswer = prompt('do you know my favourits animals?');
-    }
-    // eslint-disable-next-line eqeqeq
-    while (userAnswer == correctAnswers[0] || userAnswer == correctAnswers[1]) {
 
-      alert('it is right ');
-      score = score + 1;
-      break;
+      userAnswer = prompt('do you know my favourits animals?');
+
+      while (userAnswer === correctAnswers[0] || userAnswer === correctAnswers[1]) {
+
+        alert('it is right ');
+        score = score + 1;
+        break;
+      }
     }
-    alert(`they are ${correctAnswers[0]} and ${correctAnswers[1]}`);
+
+    alert(`they are  ${correctAnswers[0]}  and   ${correctAnswers[1]}`);
   }
 }
 
